@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 function Navbar() {
   const [searchVisible, setSearchVisible] = useState(false);
 
@@ -17,13 +18,13 @@ function Navbar() {
                   <ul className="nav-list" style={{ display: 'flex', justifyContent: 'center' }}>
                   <ul className="nav-list" style={{ display: 'flex', justifyContent: 'center', listStyleType: 'none' }}>
   <li className="nav-item">
-    <h6 className="text-center" style={{ marginLeft: '10px' }}>Product</h6>
+  <Link to='/'> <h6 className="text-center" style={{ marginLeft: '10px' }}>Home</h6> </Link>  
   </li>
   <li className="nav-item">
-    <h6 className="text-center" style={{ marginLeft: '10px' }}>Product</h6>
+    <Link to='/Mobprod'><h6 className="text-center" style={{ marginLeft: '10px' }}>Product</h6></Link> 
   </li>
   <li className="nav-item">
-    <h6 className="text-center" style={{ marginLeft: '10px' }}>Product</h6>
+  <Link to='/cart'><h6 className="text-center" style={{ marginLeft: '10px' }}>Cart</h6></Link>  
   </li>
 </ul>
 </ul>
